@@ -1,4 +1,5 @@
 const fs = require('fs')
+const chalk = require('chalk')
 
 const addNote = (title, body) => {
   const notes = loadNotes()
@@ -9,9 +10,9 @@ const addNote = (title, body) => {
       body: body,
     })
     saveNotes(notes)
-    console.log('note added!')
+    console.log(chalk.green.inverse('note added!'))
   } else {
-    console.log('title already exist!')
+    console.log(chalk.red.inverse('title already exist!'))
   }
 }
 
