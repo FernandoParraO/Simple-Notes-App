@@ -22,6 +22,12 @@ This application store notes with title and body, you cannot have notes with the
 
 `node app.js add --title="Your Note Title" --body="Your Note Body"`
 
+## Listing all the notes:
+
+You can list all existing notes using this command.
+
+`node app.js list`
+
 ## Removing a note:
 
 You can remove a note using the title of the note.

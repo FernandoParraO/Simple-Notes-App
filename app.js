@@ -29,9 +29,13 @@ yargs.command({
       type: 'string',
     },
   },
-  handler: function (argv) {
-    notes.removeNote(argv.title)
-  },
+  handler: (argv) => notes.removeNote(argv.title),
+})
+
+yargs.command({
+  command: 'list',
+  describe: 'List the notes',
+  handler: () => notes.listNotes(),
 })
 
 yargs.parse()
