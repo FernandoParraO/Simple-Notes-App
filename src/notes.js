@@ -35,6 +35,17 @@ const listNotes = () => {
   })
 }
 
+const readNote = (title) => {
+  const notes = loadNotes()
+  const note = notes.find((note) => note.title === title)
+  if (note) {
+    console.log(chalk.inverse(note.title))
+    console.log(note.body)
+  } else {
+    console.log(chalk.red.inverse('note not found'))
+  }
+}
+
 const loadNotes = () => {
   try {
     return JSON.parse(fs.readFileSync('notes.json').toString())
@@ -43,12 +54,12 @@ const loadNotes = () => {
   }
 }
 
-const saveNotes = function (notes) {
+const saveNotes = (notes) =>
   fs.writeFileSync('notes.json', JSON.stringify(notes))
-}
 
 module.exports = {
   addNote,
   removeNote,
   listNotes,
+  readNote,
 }
