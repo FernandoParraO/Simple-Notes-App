@@ -20,4 +20,10 @@ To get a list of the available commands, run:
 
 This application store notes with title and body, you cannot have notes with the same title.
 
-`node app.js --title="Your Note Title" --body="Your Note Body"`
+`node app.js add --title="Your Note Title" --body="Your Note Body"`
+
+## Removing a note:
+
+You can remove a note using the title of the note.
+
+`node app.js remove --title="Your Note Title"`
