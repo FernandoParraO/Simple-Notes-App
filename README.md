@@ -1,2 +1,11 @@
 # Simple-Notes-App
-Simple Notes App with NodeJS
+
+This is a Simple Notes App with NodeJS that works locally on the command line.
+
+# Requirements
+
+NodeJS
+
+# Installation
+
+# Usage
