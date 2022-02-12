@@ -14,10 +14,10 @@ NodeJS
 
 To get a list of the available commands, run:
 
-`node src/app.js --help`
+`node app.js --help`
 
 ## Adding a note:
 
 This application store notes with title and body, you cannot have notes with the same title.
 
-`node src/app.js --title="Your Note Title" --body="Your Note Body"`
+`node app.js --title="Your Note Title" --body="Your Note Body"`

@@ -1,4 +1,4 @@
-const notes = require('./notes.js')
+const notes = require('./src/notes.js')
 const yargs = require('yargs')
 
 yargs.command({
