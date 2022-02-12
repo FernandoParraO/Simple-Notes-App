@@ -1,3 +1,22 @@
 const notes = require('./notes.js')
+const yargs = require('yargs')
 
-notes.addNote()
+yargs.command({
+  command: 'add',
+  describe: 'Adds a new note',
+  builder: {
+    title: {
+      describe: 'Title for your note',
+      demandOption: true,
+      type: 'string',
+    },
+    body: {
+      describe: 'Body for your note',
+      demandOption: true,
+      type: 'string',
+    },
+  },
+  handler: (argv) => notes.addNote(argv.title, argv.body),
+})
+
+yargs.parse()

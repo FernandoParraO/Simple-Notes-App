@@ -1,0 +1,22 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "Simple terminal notes app using NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernandoParraO/Simple-Notes-App.git"
+  },
+  "author": "Fernando Parra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FernandoParraO/Simple-Notes-App/issues"
+  },
+  "homepage": "https://github.com/FernandoParraO/Simple-Notes-App#readme",
+  "dependencies": {
+    "yargs": "^17.3.1"
+  }
+}
