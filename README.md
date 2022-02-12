@@ -13,6 +13,7 @@ NodeJS
 Clone the repository.
 
 `git clone https://github.com/FernandoParraO/Simple-Notes-App.git`
+
 On the root of the project, run
 
 `npm install`
